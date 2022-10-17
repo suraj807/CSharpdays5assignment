@@ -11,45 +11,58 @@ namespace CSharpDay5Assignments
     {
         static void Main(string[] args)
         {
-           
+            Console.WriteLine("\n problem 1 for even or odd \n problem 2 for leapyear \n problem 3 for large3number \n problem 4 for factornumber");
+            Console.WriteLine(" problem 5 for hormonic num \n problem 6 for swap2number \n problem 7 for qutant& remainder");
+            Console.WriteLine(" problem 8 for vowelor constant");
+            Console.WriteLine("Enter your choice : ");
+            int a = Convert.ToInt32(Console.ReadLine());
 
-            EvenOddNumber number = new EvenOddNumber();
-            number.Number();
+            switch (a)
+            {
+                case 1:
+                    EvenOddNumber number = new EvenOddNumber();
+                    number.Number();
+                    break;
 
-            Leepyear year = new Leepyear();
-            year.year();
+                   
+                case 2:
+                    Leepyear year = new Leepyear();
+                    year.year();
+                    break;
 
-            Largethreenumber largethreenumber = new Largethreenumber();
-            largethreenumber.large();
+                  case 3:
+                    Largethreenumber largethreenumber = new Largethreenumber();
+                    largethreenumber.large();
+                    break;
 
-            Factornumber factornumber = new Factornumber();
-            factornumber.factor();
+                case 4:
+                    Factornumber factornumber = new Factornumber();
+                    factornumber.factor();
+                    break;
 
-            Harmonicnumber harmonicnumber = new Harmonicnumber();
-            harmonicnumber.harnonic();
+                case 5:
+                    Harmonicnumber harmonicnumber = new Harmonicnumber();
+                    harmonicnumber.harnonic();
+                    break;
+                case 6:
+                    swaptwonumber swaptwonumber = new swaptwonumber();
+                    swaptwonumber.swap();
+                    break;
+                case 7:
+                    QuotientandRemainder quotientandRemainder = new QuotientandRemainder();
+                    quotientandRemainder.divide();
+                    break;
+                case 8:
+                    VowelorConsonant vowelorConsonant = new VowelorConsonant();
+                    vowelorConsonant.vowel();
+                    break;
+                    default:
+                    Console.WriteLine("please enter valid number ");
+                    break;
 
-
-
-
-            swaptwonumber swaptwonumber = new swaptwonumber();
-            swaptwonumber.swap();
-
-            
-
-            QuotientandRemainder quotientandRemainder = new QuotientandRemainder();
-            quotientandRemainder.divide();
-
-
-            
-
-            VowelorConsonant vowelorConsonant = new VowelorConsonant();
-            vowelorConsonant.vowel();
-
-
-           
-
-            
             Console.ReadLine();
+
+        }
         }
     }
 }

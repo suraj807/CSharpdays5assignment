@@ -10,8 +10,9 @@ namespace CSharpdays5_Assigement
     {
         public void divide()
         {
-
+            Console.WriteLine("please enter dividend");
             int dividend = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("please enter divisor");
             int divisor = Convert.ToInt32(Console.ReadLine());
            
 
